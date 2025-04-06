@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { UserContext } from "../context/UserContext.";
 
 const Users = () => {
-  const { users, fetchUser } = useContext(UserContext)!;
+  const { users, fetchUser } = useContext(UserContext);
 
   useEffect(() => {
     fetchUser(); 
